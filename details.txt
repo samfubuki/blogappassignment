@@ -1,0 +1,8 @@
+1. Have used NodeJs and Express to build the complete application.
+NodeJS version - 14.18.1
+Express version - 4.17.1
+2. Have used the MongoDB atlas for database part of my application. Have used with the mongoose part
+Mongoose version - 6.0.13
+3. Have used the passport for authentication of the user
+Passport version - 0.5.1
+
