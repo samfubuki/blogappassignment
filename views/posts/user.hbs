@@ -59,15 +59,10 @@
         <br>
         <div class="row text-center" style="display:flex; flex-wrap:wrap;">
             {{#each posts}}
-            <div class="col-md-3 col-sm-6">
-                <div class="thumbnail">
-                    <img src="{{this.image}}" width="200" height="200">
-                    <div class="caption">
-                        <h4>{{this.name}}</h4>
-                    </div>
-                    <p>
-                        <a href="/posts/{{this._id}}" class="btn btn-primary">More Info</a>
-                    </p>
+          <div class="card w-50">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.name}}</h5>
+                    <a href="/posts/{{this._id}}" class="btn btn-primary">More Info</a>
                 </div>
             </div>
             {{/each}}
