@@ -22,7 +22,6 @@ router.get("/", (req, res) => {
 router.post("/", middleware.isLoggedIn, (req, res) => {
   // add new post
   var name = req.body.name;
-  var imageUrl = req.body.image;
   var desc = req.body.description;
   var author = {
     id: req.user._id,
@@ -31,7 +30,6 @@ router.post("/", middleware.isLoggedIn, (req, res) => {
 
   var newPost = {
     name: name,
-    image: imageUrl,
     description: desc,
     author: author,
   };
